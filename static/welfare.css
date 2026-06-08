@@ -1,0 +1,226 @@
+/**
+ * GVIFishery Technology - Bhubaneswar, Odisha
+ * GitHub Repository: GVIFishery
+ * File: welfare.css
+ * Department of Fisheries and Fishermen's Welfare, Government of Odisha
+ */
+
+.info-page-section{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.info-page-container{
+    width: 100%;
+    height: auto;
+    padding: 2vw;
+    box-sizing: border-box;
+
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(163,255,255),
+        white,
+        aqua
+    );
+}
+
+.info-card{
+    width: 100%;
+    height: auto;
+    background: rgba(255,255,255,0.6);
+    border-radius: 20px;
+    padding: 2vw;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.content-title{
+    font-size: 2rem;
+    color: rgb(0,0,0);
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.content-title::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 6px;
+    margin: 12px auto 0;
+    background-color: #ff8800;
+    border-radius: 20px;
+}
+
+.info-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+.content{
+    flex: 1;
+    min-width: 280px;
+    font-size: 1rem;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+.img-container{
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.img-title{
+    font-family: Sofia, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 1vw;
+}
+
+.img-fluid{
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+
+    border-radius: 15px;
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.content-right{
+    flex: 1;
+    min-width: 280px;
+    font-size: 1rem;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    padding: 1.5vw;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+@media screen and (max-width: 768px){
+
+    .info-content{
+        flex-direction: column;
+    }
+
+    .content-title{
+        font-size: 1.6rem;
+    }
+
+    .content,
+    .content-right{
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .img-fluid{
+        max-height: 250px;
+    }
+}
+.info-card-1{
+    border-left: 2px solid rgba(0,0,0,0.3);
+    border-right: 2px solid rgba(0,0,0,1);
+    margin: 3vh auto 1vh;
+    padding: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info-card .info-content{
+    width: 100%;
+    height:auto;
+    text-align: center;
+}
+.info-content .text{
+    font-size: 1.5rem;
+    margin:auto;
+    color: rgb(255, 0, 93);
+    font-family:sofia, Arial, Helvetica, sans-serif;
+}
+.welfare-table-container{
+    width: 100%;
+    overflow-x: auto;
+    margin: 3px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.welfare-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    min-width: 900px;
+}
+
+.welfare-table thead{
+    background: linear-gradient(to right, #0099cc, #00c6a7);
+    color: white;
+}
+
+.welfare-table th{
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #dcdcdc;
+}
+
+.welfare-table td{
+    padding: 14px;
+    border: 1px solid #e2e2e2;
+    font-size: 0.95rem;
+    color: #333;
+    vertical-align: middle;
+}
+
+.welfare-table tbody tr:nth-child(even){
+    background-color: #f8fcff;
+}
+
+.welfare-table tbody tr:hover{
+    background-color: #e9f8ff;
+    transition: 0.3s ease;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.width{
+    width: 30%;
+}
+
+.welfare-table tbody td:first-child{
+    font-weight: bold;
+}
+
+.welfare-table tbody tr td[colspan]{
+    font-weight: 500;
+}
+@media screen and (max-width: 768px){
+
+    .welfare-table-container{
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .welfare-table{
+        min-width: 700px;
+    }
+
+    .welfare-table th,
+    .welfare-table td{
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}
+.text1{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: justify;
+}

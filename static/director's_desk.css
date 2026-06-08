@@ -1,0 +1,128 @@
+/**
+ * GVIFishery Technology - Bhubaneswar, Odisha
+ * GitHub Repository: GVIFishery
+ * File: director's_desk.css
+ * Department of Fisheries and Fishermen's Welfare, Government of Odisha
+ */
+
+.container {
+    width: 100%;
+    padding: 60px 15%;
+    background: #0091ff;
+    background-image: linear-gradient(to right,#c6e5ff,#6cbfff);
+    font-family: Arial, sans-serif;
+}
+
+.container h2 {
+    font-size: 1.3rem;
+    color: #1b1b1b;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+.img-container{
+    padding-top: 2vw;
+    background-color: #0091ff;
+    background-image:radial-gradient(circle,#00090f,#0095ff,#000000) ;
+    padding-bottom: 5vw;
+}
+.img-container div{
+    margin:0 auto;
+    overflow:hidden;
+    width:60%;
+    height:auto;
+    background-color: #fff;
+    box-shadow:2px 5px 10px #000;
+    position: relative;
+    padding: 3% 3% 4% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-inner {
+    position: relative;
+    width: 100%;
+}
+
+.img-container div img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.img-container div h3{
+    color: #0cb100;
+    font-size: clamp(0.8rem, 2.2vw, 1.6rem);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3%;
+    font-weight: bold;
+    width: 100%;
+}
+
+.img-container p{
+    text-align:center;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    position:relative;
+}
+
+.img-container p::after{
+    content:"";
+    width:20vw;
+    height:0.8vh;
+    background:#0d6efd;
+    display:block;
+    margin:10px auto 0;
+    border-radius:10px;
+}
+.svg-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.director-circle{
+    fill:transparent;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.director-circle:hover{
+    fill:rgba(255,0,0,0.35);
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 40px 10%;
+    }
+
+    .img-container div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 5%;
+    }
+
+    .img-container div {
+        width: 95%;
+    }
+
+    .img-container p {
+        font-size: 1.5rem;
+    }
+}

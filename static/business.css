@@ -1,0 +1,193 @@
+/**
+ * GVIFishery Technology - Bhubaneswar, Odisha
+ * GitHub Repository: GVIFishery
+ * File: business.css
+ * Department of Fisheries and Fishermen's Welfare, Government of Odisha
+ */
+
+.main-container{
+    margin:0;
+    padding: 0;
+    background-color: aqua;
+    background-image:linear-gradient(to bottom right ,aqua,white,aqua);
+}
+.intro-container{
+    width: 80%;
+    margin: auto;
+}
+.content-title{
+    padding-top: 2vw;
+    text-align: center;
+}
+.small-title{
+    text-align:center;
+}
+.intro-text .content,.intro-text .content-disclaimer{
+    font-family: Poppins, sans-serif, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top :2vw;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+.btn-download{
+    background-color: blue;
+    margin-left: auto;
+    padding: 5px 20px;
+    border-radius: 25px;
+    width: 10%;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+}
+.org-business {
+    padding: 50px 10%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 2vw;
+}
+
+.tabs label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+    padding: 14px 10px;
+    border: 1px solid #00114d;
+    background: transparent;
+    color: #00114d;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0;
+}
+.tab-content {
+    display: none;
+    margin-top: 1vw;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tab1:checked~.tabs label[for="tab1"],
+#tab2:checked~.tabs label[for="tab2"],
+#tab3:checked~.tabs label[for="tab3"],
+#tab4:checked~.tabs label[for="tab4"],
+#tab5:checked~.tabs label[for="tab5"] {
+    background: #020b4f;
+    color: white;
+}
+
+#tab1:checked~.content .content1,
+#tab2:checked~.content .content2,
+#tab3:checked~.content .content3,
+#tab4:checked~.content .content4,
+#tab5:checked~.content .content5 {
+    display: block;
+}
+.content-card {
+    background: white;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+.card-header {
+    background-color: #1ca3ec;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card-body {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+.card-left {
+    flex: 1;
+    text-align: center;
+}
+.card-left img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-right {
+    flex: 2;
+}
+.card-center-text {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.card-underline {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-right ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.card-right li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+th{
+    padding: 10px;
+}
+td{
+    padding:5px 30px;
+}
+
+@media (max-width: 992px) {
+    .org-business {
+        padding: 30px 5%;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .tabs label {
+        flex: 1 1 calc(50% - 8px);
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-container {
+        width: 95%;
+    }
+    .table-responsive{
+        display: block;
+        overflow-x: auto;
+    }
+    .tabs {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .tabs label {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .card-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-left img {
+        max-width: 200px;
+    }
+}

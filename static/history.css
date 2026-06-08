@@ -1,0 +1,152 @@
+/**
+ * GVIFishery Technology - Bhubaneswar, Odisha
+ * GitHub Repository: GVIFishery
+ * File: history.css
+ * Department of Fisheries and Fishermen's Welfare, Government of Odisha
+ */
+
+.history-page-section {
+    padding: 5rem 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #69bbff;
+    background-image:linear-gradient(to bottom right,rgb(163, 255, 255),white,aqua);
+}
+
+.history-page-container {
+    width: 100%;
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.history-page-header h3 {
+    color: #0c1239;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.history-page-header h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.history-page-header p,
+.history-content p,
+.history-page-footer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.history-card {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    box-shadow:2px 2px 10px #000;
+    margin: 0 0 20px 0;
+    padding: 1.2% 0%;
+    align-items: center;
+}
+
+.history-card .history-img {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.history-card .history-content {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.history-card.text-only .history-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.history-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.history-content h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.history-content ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.history-content ul li {
+    padding-bottom: 5px;
+}
+
+.history-content ul li i {
+    margin-right: 5px;
+    color: #ff6a00;
+}
+.milestone-box {
+    margin-top: 20px;
+}
+
+.milestone-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.milestone-box ul {
+    list-style-type: none;
+}
+
+.milestone-box i {
+    color: #ff6a00
+}
+
+@media (max-width: 768px) {
+    .history-page-section {
+        padding: 3rem 0;
+    }
+
+    .history-card {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .history-card .history-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .history-card .history-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .history-page-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .history-page-header h4, .milestone-box h4 {
+        font-size: 1.25rem;
+    }
+}
